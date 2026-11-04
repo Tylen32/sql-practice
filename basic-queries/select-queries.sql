@@ -25,3 +25,5 @@ SELECT * FROM film WHERE rating = 'R' OR rating = 'PG-13';
 -- what is the email of the customer named nancy thomas 
 SELECT email FROM customer WHERE first_name = 'Nancy' AND last_name = 'Thomas';
 
+-- what is the description of the film Ace Goldfinger
+SELECT description FROM film WHERE title = 'Ace Goldfinger';
