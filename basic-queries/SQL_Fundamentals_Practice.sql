@@ -28,3 +28,24 @@ SELECT email FROM customer WHERE first_name = 'Nancy' AND last_name = 'Thomas';
 
 -- what is the description of the film Ace Goldfinger
 SELECT description FROM film WHERE title = 'Ace Goldfinger';
+
+-- return the first 10 ids of the customers who ever created a payment
+SELECT * FROM payment;
+
+SELECT customer_id 
+FROM payment 
+ORDER BY payment_date ASC
+LIMIT 10;
+
+-- how many movies are 50 minitues or less in runtime
+SELECT * FROM film;
+
+SELECT count (length) 
+FROM film 
+where length <= 50;
+
+-- what are the emails for customers named john or jake
+SELECT email from customer 
+where first_name IN ('John', 'Jake');
+
+
